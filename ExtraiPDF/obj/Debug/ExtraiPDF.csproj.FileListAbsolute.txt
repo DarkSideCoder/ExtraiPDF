@@ -1,0 +1,11 @@
+C:\Users\DarkSide\Documents\Visual Studio 2015\Projects\ExtraiPDF\ExtraiPDF\bin\Debug\ExtraiPDF.exe.config
+C:\Users\DarkSide\Documents\Visual Studio 2015\Projects\ExtraiPDF\ExtraiPDF\bin\Debug\ExtraiPDF.exe
+C:\Users\DarkSide\Documents\Visual Studio 2015\Projects\ExtraiPDF\ExtraiPDF\bin\Debug\ExtraiPDF.pdb
+C:\Users\DarkSide\Documents\Visual Studio 2015\Projects\ExtraiPDF\ExtraiPDF\bin\Debug\itextsharp.dll
+C:\Users\DarkSide\Documents\Visual Studio 2015\Projects\ExtraiPDF\ExtraiPDF\bin\Debug\itextsharp.xml
+C:\Users\DarkSide\Documents\Visual Studio 2015\Projects\ExtraiPDF\ExtraiPDF\obj\Debug\ExtraiPDF.csprojResolveAssemblyReference.cache
+C:\Users\DarkSide\Documents\Visual Studio 2015\Projects\ExtraiPDF\ExtraiPDF\obj\Debug\ExtraiPDF.Form1.resources
+C:\Users\DarkSide\Documents\Visual Studio 2015\Projects\ExtraiPDF\ExtraiPDF\obj\Debug\ExtraiPDF.Properties.Resources.resources
+C:\Users\DarkSide\Documents\Visual Studio 2015\Projects\ExtraiPDF\ExtraiPDF\obj\Debug\ExtraiPDF.csproj.GenerateResource.Cache
+C:\Users\DarkSide\Documents\Visual Studio 2015\Projects\ExtraiPDF\ExtraiPDF\obj\Debug\ExtraiPDF.exe
+C:\Users\DarkSide\Documents\Visual Studio 2015\Projects\ExtraiPDF\ExtraiPDF\obj\Debug\ExtraiPDF.pdb
