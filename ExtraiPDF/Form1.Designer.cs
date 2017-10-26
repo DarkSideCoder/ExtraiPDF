@@ -33,19 +33,19 @@
             this.lcLines = new System.Windows.Forms.Label();
             this.rtbResult = new System.Windows.Forms.RichTextBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.PATH = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
-            this.checkBox6 = new System.Windows.Forms.CheckBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.HTTP = new System.Windows.Forms.CheckBox();
+            this.HTTPS = new System.Windows.Forms.CheckBox();
+            this.PDF = new System.Windows.Forms.CheckBox();
+            this.MP3 = new System.Windows.Forms.CheckBox();
+            this.MP4 = new System.Windows.Forms.CheckBox();
+            this.Custom = new System.Windows.Forms.CheckBox();
             this.label4 = new System.Windows.Forms.Label();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btAction
@@ -95,12 +95,13 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // textBox1
+            // PATH
             // 
-            this.textBox1.Location = new System.Drawing.Point(94, 17);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(454, 20);
-            this.textBox1.TabIndex = 6;
+            this.PATH.Location = new System.Drawing.Point(94, 17);
+            this.PATH.Name = "PATH";
+            this.PATH.Size = new System.Drawing.Size(454, 20);
+            this.PATH.TabIndex = 6;
+            this.PATH.Text = "c:\\windows\\temp\\enem.html";
             // 
             // label2
             // 
@@ -113,6 +114,7 @@
             // 
             // button2
             // 
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button2.Location = new System.Drawing.Point(13, 13);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 46);
@@ -130,72 +132,76 @@
             this.label3.TabIndex = 9;
             this.label3.Text = "Protocol";
             // 
-            // checkBox1
+            // HTTP
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(143, 46);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(55, 17);
-            this.checkBox1.TabIndex = 10;
-            this.checkBox1.Text = "HTTP";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.HTTP.AutoSize = true;
+            this.HTTP.Checked = true;
+            this.HTTP.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.HTTP.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.HTTP.Location = new System.Drawing.Point(143, 46);
+            this.HTTP.Name = "HTTP";
+            this.HTTP.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.HTTP.Size = new System.Drawing.Size(55, 17);
+            this.HTTP.TabIndex = 10;
+            this.HTTP.Text = "HTTP";
+            this.HTTP.UseVisualStyleBackColor = true;
             // 
-            // checkBox2
+            // HTTPS
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(204, 46);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(62, 17);
-            this.checkBox2.TabIndex = 11;
-            this.checkBox2.Text = "HTTPS";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.HTTPS.AutoSize = true;
+            this.HTTPS.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.HTTPS.Location = new System.Drawing.Point(204, 46);
+            this.HTTPS.Name = "HTTPS";
+            this.HTTPS.Size = new System.Drawing.Size(62, 17);
+            this.HTTPS.TabIndex = 11;
+            this.HTTPS.Text = "HTTPS";
+            this.HTTPS.UseVisualStyleBackColor = true;
             // 
-            // checkBox3
+            // PDF
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(326, 45);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(47, 17);
-            this.checkBox3.TabIndex = 12;
-            this.checkBox3.Text = "PDF";
-            this.checkBox3.UseVisualStyleBackColor = true;
+            this.PDF.AutoSize = true;
+            this.PDF.Checked = true;
+            this.PDF.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.PDF.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.PDF.Location = new System.Drawing.Point(326, 45);
+            this.PDF.Name = "PDF";
+            this.PDF.Size = new System.Drawing.Size(47, 17);
+            this.PDF.TabIndex = 12;
+            this.PDF.Text = "PDF";
+            this.PDF.UseVisualStyleBackColor = true;
             // 
-            // checkBox4
+            // MP3
             // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(379, 45);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(48, 17);
-            this.checkBox4.TabIndex = 13;
-            this.checkBox4.Text = "MP3";
-            this.checkBox4.UseVisualStyleBackColor = true;
+            this.MP3.AutoSize = true;
+            this.MP3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.MP3.Location = new System.Drawing.Point(379, 45);
+            this.MP3.Name = "MP3";
+            this.MP3.Size = new System.Drawing.Size(48, 17);
+            this.MP3.TabIndex = 13;
+            this.MP3.Text = "MP3";
+            this.MP3.UseVisualStyleBackColor = true;
             // 
-            // checkBox5
+            // MP4
             // 
-            this.checkBox5.AutoSize = true;
-            this.checkBox5.Location = new System.Drawing.Point(433, 45);
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(48, 17);
-            this.checkBox5.TabIndex = 14;
-            this.checkBox5.Text = "MP4";
-            this.checkBox5.UseVisualStyleBackColor = true;
+            this.MP4.AutoSize = true;
+            this.MP4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.MP4.Location = new System.Drawing.Point(433, 45);
+            this.MP4.Name = "MP4";
+            this.MP4.Size = new System.Drawing.Size(48, 17);
+            this.MP4.TabIndex = 14;
+            this.MP4.Text = "MP4";
+            this.MP4.UseVisualStyleBackColor = true;
             // 
-            // checkBox6
+            // Custom
             // 
-            this.checkBox6.AutoSize = true;
-            this.checkBox6.Location = new System.Drawing.Point(487, 45);
-            this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(61, 17);
-            this.checkBox6.TabIndex = 15;
-            this.checkBox6.Text = "Custom";
-            this.checkBox6.UseVisualStyleBackColor = true;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(555, 42);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(74, 20);
-            this.textBox2.TabIndex = 16;
+            this.Custom.AutoSize = true;
+            this.Custom.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Custom.Location = new System.Drawing.Point(487, 45);
+            this.Custom.Name = "Custom";
+            this.Custom.Size = new System.Drawing.Size(61, 17);
+            this.Custom.TabIndex = 15;
+            this.Custom.Text = "Custom";
+            this.Custom.UseVisualStyleBackColor = true;
             // 
             // label4
             // 
@@ -210,23 +216,30 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(544, 39);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(84, 20);
+            this.textBox2.TabIndex = 18;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(641, 488);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.checkBox6);
-            this.Controls.Add(this.checkBox5);
-            this.Controls.Add(this.checkBox4);
-            this.Controls.Add(this.checkBox3);
-            this.Controls.Add(this.checkBox2);
-            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.Custom);
+            this.Controls.Add(this.MP4);
+            this.Controls.Add(this.MP3);
+            this.Controls.Add(this.PDF);
+            this.Controls.Add(this.HTTPS);
+            this.Controls.Add(this.HTTP);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.PATH);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.rtbResult);
             this.Controls.Add(this.lcLines);
@@ -246,19 +259,19 @@
         private System.Windows.Forms.Label lcLines;
         private System.Windows.Forms.RichTextBox rtbResult;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox PATH;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.CheckBox checkBox4;
-        private System.Windows.Forms.CheckBox checkBox5;
-        private System.Windows.Forms.CheckBox checkBox6;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.CheckBox HTTP;
+        private System.Windows.Forms.CheckBox HTTPS;
+        private System.Windows.Forms.CheckBox PDF;
+        private System.Windows.Forms.CheckBox MP3;
+        private System.Windows.Forms.CheckBox MP4;
+        private System.Windows.Forms.CheckBox Custom;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.TextBox textBox2;
     }
 }
 
