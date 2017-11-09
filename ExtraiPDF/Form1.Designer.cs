@@ -46,6 +46,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.textBox2 = new System.Windows.Forms.TextBox();
+            this.lcOccurrences = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btAction
@@ -78,7 +79,7 @@
             // 
             // rtbResult
             // 
-            this.rtbResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rtbResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rtbResult.Location = new System.Drawing.Point(12, 65);
             this.rtbResult.Name = "rtbResult";
             this.rtbResult.Size = new System.Drawing.Size(616, 382);
@@ -223,11 +224,21 @@
             this.textBox2.Size = new System.Drawing.Size(84, 20);
             this.textBox2.TabIndex = 18;
             // 
+            // lcOccurrences
+            // 
+            this.lcOccurrences.AutoSize = true;
+            this.lcOccurrences.Location = new System.Drawing.Point(113, 458);
+            this.lcOccurrences.Name = "lcOccurrences";
+            this.lcOccurrences.Size = new System.Drawing.Size(10, 13);
+            this.lcOccurrences.TabIndex = 19;
+            this.lcOccurrences.Text = "-";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(641, 488);
+            this.Controls.Add(this.lcOccurrences);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.Custom);
@@ -272,6 +283,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label lcOccurrences;
     }
 }
 
